@@ -51,6 +51,7 @@ body {
 }
 
 h1 {
+    padding-bottom: 37px;
     font-size: 1.8em; 
     margin: 8px 0; 
     text-align: center;
@@ -60,7 +61,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 10px; 
+    gap: 40px; 
     max-width: 900px; 
 }
 
@@ -70,6 +71,7 @@ h1 {
 }
 
 #imagem {
+    box-shadow: 10px -10px #c3c3c3;
     width: 100%;
     height: auto;
     border-radius: 4px; 
