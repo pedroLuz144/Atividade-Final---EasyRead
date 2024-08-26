@@ -42,6 +42,15 @@ body {
     padding: 0 35px; 
 }
 
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
 .main-content {
     padding-top: 30px;
     flex: 1;
@@ -64,19 +73,8 @@ h1 {
     max-width: 900px; 
 }
 
-.img-container {
-    flex: 1;
-    min-width: 250px; 
-}
-
-#imagem {
-    width: 100%;
-    height: auto;
-    border-radius: 4px; 
-}
-
 .info {
-    padding-top: 90px;
+    padding-top: 30px;
     flex: 2;
     min-width: 200px;
 }
