@@ -1,0 +1,135 @@
+/* CSS existente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px; 
+    background: #1abc9c;
+    color: white;
+}
+
+#cabecalho1 {
+    text-align: left;
+    flex: 1;
+    font-size: 24px; 
+}
+
+#cabecalho2 {
+    display: contents;
+    text-align: right;
+    flex: 2;
+    font-size: 18px; 
+}
+
+.header h3 {
+    margin: 0;
+    padding: 0 35px; 
+}
+
+.main-content {
+    padding-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 37px;
+    font-size: 1.8em; 
+    margin: 8px 0; 
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px; 
+    max-width: 900px; 
+}
+
+.img-container {
+    flex: 1;
+    min-width: 250px; 
+}
+
+#user-image {
+    box-shadow: 10px -10px #c3c3c3;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Torna a imagem redonda */
+}
+
+.info {
+    padding-top: 90px;
+    flex: 2;
+    min-width: 200px;
+}
+
+ul {
+    font-size: medium; 
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+ul li {
+    margin-bottom: 6px; 
+}
+
+p {
+    padding-top: 30px;
+    margin: 5px 0;
+    line-height: 1.3; 
+    font-size: 1.1em;
+}
+
+button {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 8px 15px; 
+    font-size: 14px; 
+    cursor: pointer;
+    border-radius: 6px; 
+    display: block;
+    margin: 10px auto; 
+    width: 180px; 
+    height: 60px;
+}
+
+#edit-profile {
+    font-size: 1.2em; 
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .img-container, .info {
+        min-width: 100%;
+    }
+}
