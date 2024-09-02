@@ -1,4 +1,4 @@
-/* Reset de margens e preenchimentos, e definição do layout flexível */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,20 +6,19 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: Verdana, sans-serif;
-    overflow-x: hidden; /* Remove a rolagem horizontal */
+    overflow-x: hidden; 
 }
 
-/* Estilização do cabeçalho */
+
 #cabecalho {
     display: flex;
-    justify-content: space-between; /* Alinha o conteúdo do cabeçalho com espaço entre eles */
-    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
-    background-color: #1abc9c; /* Cor do cabeçalho */
-    padding: 0 20px; /* Adiciona um pouco de espaçamento interno à esquerda e direita */
-    height: 80px; /* Aumenta a altura do cabeçalho */
-}
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #1abc9c; 
+    padding: 0 20px; 
+    height: 80px; 
 
-/* Estilização dos links no cabeçalho */
+
 #cabecalho h1, #cabecalho h3 {
     margin: 0;
     color: white;
@@ -28,44 +27,44 @@ html, body {
 #cabecalho a {
     color: white;
     text-decoration: none;
-    margin-left: 20px; /* Espaçamento entre os links */
+    margin-left: 20px;
 }
 
-/* Alinhamento dos botões no cabeçalho */
+
 .cabecalho2 {
     display: flex;
-    align-items: center; /* Alinha verticalmente os itens no centro */
+    align-items: center; 
 }
 
-/* Estilo específico para o link "About us" */
+
 .cabecalho2 a {
-    margin-left: 20px; /* Espaçamento entre os links */
+    margin-left: 20px; 
 }
 
-/* Estilização do corpo onde os livros serão exibidos */
+
 .corpo {
     flex-grow: 1;
     overflow-y: auto;
     padding: 10px;
 }
 
-/* Container para os livros, utilizando grid */
+
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta o tamanho mínimo das colunas para 150px */
-    grid-gap: 20px; /* Espaçamento entre os itens */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    grid-gap: 20px; 
     padding: 10px;
 }
 
-/* Estilização das imagens dos livros */
+
 .container img {
-    width: 100%; /* Ajusta a largura para preencher o contêiner */
-    height: 200px; /* Define uma altura padrão menor para as capas dos livros */
-    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
-    display: block; /* Remove possíveis espaçamentos indesejados ao redor das imagens */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
 }
 
-/* Estilização do rodapé */
+
 .rodape {
     color: rgb(255, 255, 255);
     background-color: #1abc9c;
